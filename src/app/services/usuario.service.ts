@@ -12,7 +12,7 @@ export class UsuarioService {
 
   constructor(private http: HttpClient) {
     this.MyAppUrl = environment.endpoint;
-    this.MyApiUrl = 'api/usuarios/'
+    this.MyApiUrl = 'api/usuarios'
    }
 
   getUsuarios(p0?: string): Observable<any> {
