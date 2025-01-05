@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../../interfaces/productos.interface';
-import { TableColums, TableComponent } from '../table/table.component';
 import { ProductoService } from '../../services/producto.service';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TableColums, TableComponent } from '../../components/table/table.component';
 
 @Component({
   selector: 'app-productos',

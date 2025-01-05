@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../../services/usuario.service';
 import { CommonModule } from '@angular/common';
-import { TableColums, TableComponent } from "../table/table.component";
 import { Usuario } from '../../interfaces/usuario.interface';
 import { RouterLink } from '@angular/router';
+import { TableColums, TableComponent } from '../../components/table/table.component';
 
 @Component({
   selector: 'app-usuarios',
