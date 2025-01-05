@@ -7,7 +7,7 @@ import { TableColums, TableComponent } from '../../components/table/table.compon
 
 @Component({
   selector: 'app-productos',
-  imports: [CommonModule, TableComponent, RouterLink],
+  imports: [CommonModule, TableComponent],
   templateUrl: './productos.component.html',
   styleUrl: './productos.component.css'
 })

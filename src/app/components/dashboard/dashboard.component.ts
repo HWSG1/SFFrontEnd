@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [MatSlideToggleModule, RouterLink],
+  imports: [MatSlideToggleModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })

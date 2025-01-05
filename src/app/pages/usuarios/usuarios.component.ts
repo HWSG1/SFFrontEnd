@@ -7,7 +7,7 @@ import { TableColums, TableComponent } from '../../components/table/table.compon
 
 @Component({
   selector: 'app-usuarios',
-  imports: [CommonModule, TableComponent, RouterLink],
+  imports: [CommonModule, TableComponent],
   templateUrl: './usuarios.component.html',
   styleUrl: './usuarios.component.css'
 })

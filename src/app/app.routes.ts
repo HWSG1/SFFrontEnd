@@ -6,11 +6,14 @@ import { UsuariosComponent } from './pages/usuarios/usuarios.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    { path: 'signin', component: SignInComponent },
-    { path: 'dashboard', component: DashboardComponent },
-    { path: 'usuarios', component: UsuariosComponent },
-    { path: 'productos', component: ProductosComponent },
-    { path: '**', redirectTo: 'login', pathMatch: 'full' },
+    { path: '', loadComponent: () => import('./components/layout/layout.component'),
+        children: [
+            { path: 'signin', component: SignInComponent },
+            { path: 'dashboard', component: DashboardComponent },
+            { path: 'usuarios', component: UsuariosComponent },
+            { path: 'productos', component: ProductosComponent },
+            { path: '**', redirectTo: '', pathMatch: 'full' },
+        ]
+     }
 ];
