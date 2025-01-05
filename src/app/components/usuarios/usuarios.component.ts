@@ -3,7 +3,6 @@ import { UsuarioService } from '../../services/usuario.service';
 import { CommonModule } from '@angular/common';
 import { TableColums, TableComponent } from "../table/table.component";
 import { Usuario } from '../../interfaces/usuario.interface';
-import { timer } from 'rxjs';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -16,7 +15,6 @@ export class UsuariosComponent implements OnInit {
 
   usuarios: Usuario[] = [];
   tableColumns: TableColums<Usuario>[] = []
-  isLoadingUsuarios = true;
 
   constructor(private usuarioService: UsuarioService) {}
 

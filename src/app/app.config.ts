@@ -3,8 +3,8 @@ import { provideRouter } from '@angular/router';
 import { HttpClient, HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http'; // Importar configuración de HTTP
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { loadingInterceptor } from './utils/loading.interceptor';
+//import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { loadingInterceptor } from './interceptors/loading.interceptor';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {

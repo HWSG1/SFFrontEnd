@@ -1,6 +1,5 @@
-<div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
-
+<div class="mat-elevation-z8 responsive-table">
+    <table mat-table [dataSource]="dataSource" class="custom-table">
         @for (col of colums(); track $index) {
             <!-- ID Column -->
             <ng-container matColumnDef="{{ col.def }}">
@@ -10,7 +9,7 @@
         }
       <tr mat-header-row *matHeaderRowDef="displayedColumns()"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns();"></tr>
-
+  
       <tr *matNoDataRow>
         <td class="noData" [attr.colspan]="displayedColumns().length">
             No existen datos para mostrar...
@@ -18,15 +17,17 @@
       </tr>
     </table>
   
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+    <mat-paginator 
+        [pageSizeOptions]="[5, 10, 20]"
+        class="fixed-paginator"
         showFirstLastButtons
-        aria-label="Select page of users">
+        aria-label="Select page of table">
     </mat-paginator>
   </div>
-
-<div>
-    <ng-container>
-        <ngx-spinner><p style="color: white" > Cargando...</p></ngx-spinner>
-    </ng-container>
-</div>
+  
+  <div class="spinner-container">
+    <ngx-spinner type="square-jelly-box">
+        <p style="color: white">Cargando...</p>
+    </ngx-spinner>
+  </div>
   

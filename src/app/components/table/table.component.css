@@ -1,6 +1,66 @@
-table {
-    width: 100%;
-}
 .noData{
     text-align: center;
+}
+/* Estilo para la tabla responsiva */
+.responsive-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: auto;
+    position: relative; /* Añadido para el contexto de la tabla */
+    border-radius: 20px;
+    border: 10px solid #ffff;
+    color:azure;
+}
+/*.custom-table {
+    background-color: #464646;
+}*/
+
+/* Estilo para las columnas y filas */
+/*td, th {
+    color: white;
+}*/
+
+
+/* Estilo para el paginator fijo */
+.fixed-paginator {
+    position:sticky; /* Fija la posición del paginator */
+    padding-top: 0.5%;
+    bottom: 0;
+    right: 0;
+    left: 0; /* Extiende el paginator a lo largo de la tabla */
+    /*background: white; /* Asegura que el paginator no se mezcle con la tabla */
+    display: flex;
+    justify-content: center; /* Centra el paginator */
+}
+  
+/* Media Queries para ajustar el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .responsive-table th, 
+    .responsive-table td {
+        padding: 6px;
+        font-size: 10px;
+    }
+    .fixed-paginator {
+        padding-top: 5%;
+    }
+
+    .spinner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .spinner-container ngx-spinner {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Estilo para el spinner centrado */
+.spinner-container {
+display: flex;
+justify-content: center;
+align-items: center;
 }
