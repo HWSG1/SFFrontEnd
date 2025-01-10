@@ -1,3 +1,7 @@
+/**
+ * Servico del NPX-spinner 
+ */
+
 import { Injectable } from '@angular/core';
 import { NgxSpinnerService } from 'ngx-spinner';
 

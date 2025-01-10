@@ -10,4 +10,4 @@ export interface Producto {
     modificado_por: string; // Opcional porque puede estar vacío inicialmente
     fecha_modificacion: Date; // Opcional, manejado en actualizaciones
     estado: number; // Representa el estado del producto (activo/inactivo)
-  }
+}
