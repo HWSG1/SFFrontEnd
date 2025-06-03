@@ -1,0 +1,8 @@
+<nav>
+    <ol class="breadcrumb m-0">
+      <li *ngFor="let breadcrumb of breadcrumbs; let last = last" class="breadcrumb-item" [ngClass]="{ 'active': last }">
+        <a *ngIf="!last" [routerLink]="breadcrumb.url" style="text-decoration: none;" class="block m-0 antialiased font-sans text-sm leading-normal text-blue-900 font-normal opacity-50 transition-all hover:text-blue-500 hover:opacity-100">{{ breadcrumb.label }}</a>
+        <span *ngIf="last">{{ breadcrumb.label }}</span>
+      </li>
+    </ol>
+  </nav>

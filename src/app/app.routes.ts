@@ -17,17 +17,17 @@ export const routes: Routes = [
     { path: '', loadComponent: () => import('./components/layout/layout.component'),
         canActivate: [AuthGuard], // Usa AuthGuard aquí
         children: [
-            { path: 'signin', component: SignInComponent },
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'ventas', component: VentasComponent },
-            { path: 'compras', component: ComprasComponent },
-            { path: 'inventario', component: InventarioComponent },
-            { path: 'reportes', component: ReportesComponent },
-            { path: 'mantenimiento', component: MantenimientoComponent, 
+            { path: 'signin', component: SignInComponent, data: { breadcrumb: 'Sign In' }},
+            { path: 'dashboard', component: DashboardComponent, data: { breadcrumb: 'Dashboard' } },
+            { path: 'ventas', component: VentasComponent, data: { breadcrumb: 'Ventas' } },
+            { path: 'compras', component: ComprasComponent, data: { breadcrumb: 'Compras' } },
+            { path: 'inventario', component: InventarioComponent , data: { breadcrumb: 'Inventario' }},
+            { path: 'reportes', component: ReportesComponent , data: { breadcrumb: 'Reportes' }},
+            { path: 'mantenimiento', component: MantenimientoComponent, data: { breadcrumb: 'Mantenimiento' }, 
                 children: [
-                    { path: 'usuarios', component: UsuariosComponent },
-                    { path: 'objetos', component: ObjetosComponent },
-                    { path: 'productos', component: ProductosComponent },
+                    { path: 'usuarios', component: UsuariosComponent, data: { breadcrumb: 'Usuarios' } },
+                    { path: 'objetos', component: ObjetosComponent, data: { breadcrumb: 'Objetos' } },
+                    { path: 'productos', component: ProductosComponent , data: { breadcrumb: 'Productos' }},
                 ]
             },
             { path: '**', redirectTo: '', pathMatch: 'full' },

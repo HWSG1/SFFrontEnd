@@ -1,6 +1,7 @@
 .noData{
     text-align: center;
 }
+
 /* Estilo para la tabla responsiva */
 .responsive-table {
     display: flex;
@@ -12,15 +13,14 @@
     border: 10px solid #ffff;
     color:azure;
 }
-/*.custom-table {
-    background-color: #464646;
-}*/
 
-/* Estilo para las columnas y filas */
-/*td, th {
+
+
+/* Encabezados con fondo verde y texto blanco */
+.responsive-table th {
+    background-color: #4CAF50;
     color: white;
-}*/
-
+}
 
 /* Estilo para el paginator fijo */
 .fixed-paginator {
@@ -63,4 +63,15 @@
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+/* Filas alternas */
+.responsive-table tr:nth-child(even) {
+    background-color: #f0f0f0; /* gris más claro para alternancia */
+}
+/* Hover */
+.responsive-table tr:hover {
+    background-color: #4CAF50; /* verde oscuro al pasar el mouse */
+    transition: background-color 0.2s ease-in-out;
+    color: #f0f0f0;
 }

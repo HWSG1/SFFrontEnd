@@ -1,5 +1,26 @@
-<div class="mat-elevation-z8 responsive-table">
-    <table mat-table [dataSource]="dataSource" class="custom-table">
+<div class="mat-elevation-z8 responsive-table ">
+  
+  <div class="flex flex-row">
+    <div class="w-33 flex-none">
+      <button class=" flex items-center bg-blue-600 text-white px-2 py-1.5 hover:bg-blue-700">
+        <span class="text-lg font-bold">+</span> Nuevo Usuario
+      </button>
+    </div>
+    <div class="flex-1"></div>
+    <div class="w-64 flex-1"></div>
+    <div class="w-33 flex-none">
+      <button class="p-2 rounded-full hover:bg-gray-200">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black">
+          <circle cx="12" cy="4" r="2"/>
+          <circle cx="12" cy="12" r="2"/>
+          <circle cx="12" cy="20" r="2"/>
+        </svg>
+      </button>
+
+
+    </div>
+  </div>
+      <table mat-table [dataSource]="dataSource" class="custom-table">
         @for (col of colums(); track $index) {
             <!-- ID Column -->
             <ng-container matColumnDef="{{ col.def }}">

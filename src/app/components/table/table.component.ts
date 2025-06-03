@@ -1,6 +1,6 @@
 import { Component, AfterViewInit, ViewChild, input, OnChanges, SimpleChanges, computed } from '@angular/core';
-import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import { MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
+import { MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { CommonModule } from '@angular/common';
 import { NgxSpinnerModule } from 'ngx-spinner'
 

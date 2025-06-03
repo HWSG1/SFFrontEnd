@@ -13,6 +13,7 @@ import { TableColums, TableComponent } from '../../components/table/table.compon
 })
 export class UsuariosComponent implements OnInit {
 
+  nuevoUsuario: any = {};
   usuarios: Usuario[] = [];
   tableColumns: TableColums<Usuario>[] = []
 
@@ -61,4 +62,17 @@ export class UsuariosComponent implements OnInit {
       }
     });
   }
+
+  /*crearUsuario() {
+
+
+
+    this.usuarioService.crearUsuario(this.nuevoUsuario).subscribe(response => {
+      console.log('Usuario creado:', response);
+      alert('Usuario creado exitosamente');
+    }, error => {
+      console.error('Error al crear usuario:', error);
+    });
+  }*/
+
 }
