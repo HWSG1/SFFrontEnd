@@ -9,8 +9,8 @@
     width: 100%;
     overflow-x: auto;
     position: relative; /* Añadido para el contexto de la tabla */
-    border-radius: 20px;
-    border: 10px solid #ffff;
+    border-radius: 5px;
+    /*border: 10px solid #ffff; */
     color:azure;
 }
 
@@ -18,7 +18,7 @@
 
 /* Encabezados con fondo verde y texto blanco */
 .responsive-table th {
-    background-color: #4CAF50;
+    background-color: #111827;
     color: white;
 }
 
@@ -71,7 +71,7 @@ align-items: center;
 }
 /* Hover */
 .responsive-table tr:hover {
-    background-color: #4CAF50; /* verde oscuro al pasar el mouse */
+    background-color: #111827;
     transition: background-color 0.2s ease-in-out;
-    color: #f0f0f0;
+    color: #ffffffdc;
 }

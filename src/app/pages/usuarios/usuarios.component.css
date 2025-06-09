@@ -1,0 +1,10 @@
+*, :after, :before, ::backdrop {
+    box-sizing: border-box;
+    
+}
+
+.formusersend {
+    background-color: rgba(15, 2, 49, 0.178);
+    padding: 20px;
+    border-radius: 5px;
+}
